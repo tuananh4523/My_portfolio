@@ -8,9 +8,10 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <!-- or -->
         <link rel="stylesheet"
-            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script
             src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     </head>
@@ -21,10 +22,14 @@
                 <ul>
                     <li class="active"><a style="--i:1"
                             href="#home">Home</a></li>
-                    <li><a style="--i:2" href="#about">About</a></li>
-                    <li><a style="--i:3" href="#skills">Skills</a></li>
-                    <li><a style="--i:4" href="#services">Services</a></li>
-                    <li><a style="--i:5" href="#contact">Contact</a></li>
+                    <li class="active"><a style="--i:2"
+                            href="#about">About</a></li>
+                    <li class="active"><a style="--i:3"
+                            href="#skills">Skills</a></li>
+                    <li class="active"><a style="--i:4"
+                            href="#services">Services</a></li>
+                    <li class="active"><a style="--i:5"
+                            href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -57,13 +62,13 @@
 
                 <div class="btn-sci">
                     <div class="sci">
-                        <a style="--i:6" href="#"><i
+                        <a style="--i:1" href="#"><i
                                 class='bx bxl-github'></i></a>
-                        <a style="--i:7" href="#"><i
+                        <a style="--i:2" href="#"><i
                                 class='bx bxl-facebook'></i></a>
-                        <a style="--i:8" href="#"><i
+                        <a style="--i:3" href="#"><i
                                 class='bx bxl-youtube'></i></a>
-                        <a style="--i:9" href="#"><i
+                        <a style="--i:4" href="#"><i
                                 class='bx bxl-instagram'></i></a>
                     </div>
                 </div>
@@ -112,7 +117,8 @@
                 <h1 class="sub-title ">My <span>Services</span></h1>
                 <div class="services-list">
                     <div>
-                        <i class='bxr  bx-code' style='color:aqua'></i>
+                        <i class="fa fa-code" aria-hidden="true"
+                            style='color:aqua'></i>
                         <h2>Font-end</h2>
                         <p>Tôi chuyên phát triển giao diện người dùng với HTML,
                             CSS và JavaScript, tạo ra trải nghiệm người dùng
@@ -122,7 +128,8 @@
                     </div>
 
                     <div>
-                        <i class='bxr  bx-code' style='color:aqua;'></i>
+                        <i class="fa fa-code" aria-hidden="true"
+                            style='color:aqua'></i>
                         <h2>font-end</h2>
                         <p>Tôi chuyên phát triển giao diện người dùng với HTML,
                             CSS và JavaScript, tạo ra trải nghiệm người dùng
@@ -132,7 +139,8 @@
                     </div>
 
                     <div>
-                        <i class='bxr  bx-code' style='color:aqua;'></i>
+                        <i class="fa fa-code" aria-hidden="true"
+                            style='color:aqua'></i>
                         <h2>font-end</h2>
                         <p>Tôi chuyên phát triển giao diện người dùng với HTML,
                             CSS và JavaScript, tạo ra trải nghiệm người dùng
@@ -142,7 +150,105 @@
                     </div>
                 </div>
             </div>
+        </section>
 
+        <h1 class="sub-title">My<span> Skills</span></h1>
+        <section>
+            <div class="container" id="skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Teachnical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5' style='color:#c95d2e'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <i class='bx bxl-css3' style='color:#147bbc'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <i class='bx bxl-javascript' style='color:#b0bc1e'></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <i class='bx bxl-react' style='color:#09bcbc'></i>
+                        <div class="info">
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line react">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <h1 class="heading">Professional Skills</h1>
+                <div class="radial-bars">
+
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100"
+                            r="80"></circle>
+                        <circle class="path path-i" cx="100" cy="100"
+                            r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
+
+                <div class="radial-bars">
+
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100"
+                            r="80"></circle>
+                        <circle class="path path-i" cx="100" cy="100"
+                            r="80"></circle>
+                    </svg>
+                    <div class="percentage">65%</div>
+                    <div class="text">Communication</div>
+                </div>
+
+                <div class="radial-bars">
+
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100"
+                            r="80"></circle>
+                        <circle class="path path-i" cx="100" cy="100"
+                            r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+
+                <div class="radial-bars">
+
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100"
+                            r="80"></circle>
+                        <circle class="path path-i" cx="100" cy="100"
+                            r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">TeamWork</div>
+                </div>
+            </div>
         </section>
         <script src="main.js"></script>
     </body>
