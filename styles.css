@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -370,7 +371,7 @@ a {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 Spx #0ef,
+    box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
 }
 
@@ -384,10 +385,10 @@ a {
     transform: translateY(-10px);
 }
 
-/* section{
+.contact {
     display: flex;
     flex-wrap: wrap;
-} */
+}
 
 .container1 {
     width: 600px;
@@ -399,7 +400,7 @@ a {
 .heading1 {
     text-align: center;
     text-decoration: underline;
-    text-underline-offset: 30px;
+    text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
@@ -409,7 +410,7 @@ a {
 }
 
 .Technical-bars .bar {
-    margin-top: 40px;
+    margin-top: 40px 0;
 }
 
 .Technical-bars .bar:first-child {
@@ -431,7 +432,7 @@ a {
     opacity: 0;
 }
 
-.Technical-bars .bar .progess-line {
+.Technical-bars .bar .progress-line {
     position: relative;
     border-radius: 10px;
     width: 100%;
@@ -442,7 +443,7 @@ a {
     transform-origin: left;
 }
 
-.Technical-bars .bar .progess-line span {
+.Technical-bars .bar .progress-line span {
     height: 100%;
     background-color: #0ef;
     position: absolute;
@@ -452,23 +453,23 @@ a {
     transform-origin: left;
 }
 
-.progess-line.html span {
+.progress-line.html span {
     width: 90%;
 }
 
-.progess-line.css span {
+.progress-line.css span {
     width: 70%;
 }
 
-.progess-line.javascript span {
+.progress-line.javascript span {
     width: 70%;
 }
 
-.progess-line.react span {
+.progress-line.react span {
     width: 60%;
 }
 
-.progess-line span::after {
+.progress-line span::after {
     position: absolute;
     padding: 1px 8px;
     background-color: #000;
@@ -477,27 +478,27 @@ a {
     border-radius: 7px;
     top: -20px;
     right: -20px;
-    animation: animate 0.5s 1.5s linear forwards;
-    opacity: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 1;
 }
 
-.progess-line.html span::after {
+.progress-line.html span::after {
     content: "80%";
 }
 
-.progess-line.css span::after {
+.progress-line.css span::after {
     content: "70%";
 }
 
-.progess-line.javascript span::after {
+.progress-line.javascript span::after {
     content: "70%";
 }
 
-.progess-line.react span::after {
+.progress-line.react span::after {
     content: "60%";
 }
 
-.progess-line span::before {
+.progress-line span::before {
     content: "";
     position: absolute;
     width: 0;
@@ -509,7 +510,7 @@ a {
     top: -10px;
     right: 0;
     animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
+    opacity: 1;
 }
 
 .radial-bars {
@@ -522,7 +523,7 @@ a {
 
 .radial-bars .radial-bar {
     width: 50%;
-    height: 170%;
+    height: 170px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -531,16 +532,17 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-500, -500) rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
     width: 120px;
     height: 160px;
 }
 
-.radial-bars .radial-bar .progess-bar {
+.radial-bars .radial-bar .progress-bar {
     stroke-width: 10;
     stop-color: #000;
     fill: transparent;
     stroke-dasharray: 502;
+    stroke-dashoffset: 502;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
 }
@@ -663,11 +665,11 @@ a {
     border: 50%;
 }
 
-.row::hover img {
+.row:hover img {
     transform: scale(1).1;
 }
 
-.row::hover .layer {
+.row:hover .layer {
     height: 100%;
 }
 
@@ -788,7 +790,7 @@ a {
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 Spx #0ef,
+    box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
 }
 
@@ -798,6 +800,28 @@ a {
         0 0 100px #0ef, 0 0 200px #0ef;
 }
 
+.last-text p {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7, 85, 91);
+    font-size: 300;
+    margin-top: 70px;
+}
+
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i {
+    color: #000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
 
 
 
